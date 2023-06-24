@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.example { min-width: 100px;
+  min-height: 100px;
+  background-color: yellow;
+  padding: 20px;
+}
+
+@media screen and (max-width: 60px) {
+  div.example {
+    
+    background-color: brown;
+  }
+}
+
+@media screen and (max-width: 50px) {
+  div.example {
+  
+    background-color: rgb(122, 90, 90);
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Hide elements on different screen sizes</h2><br><br>
+<p>Media Quary apply Max-width : 600Px And 250px </p>
+<div class="example">Example DIV.</div>
+
+
+
+</body>
+</html>
