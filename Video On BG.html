@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video on bg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+
+    <style>
+        h2 {
+            background-color: grey;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .bgvideo {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: cover;
+
+        }
+
+        .fullscreen {
+            position: fixed;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="bgvideo">
+        <video src="pexels-film-composite-16296844-3840x2160-24fps.mp4" autoplay muted loop class="fullscreen"></video>
+    </div>
+
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+</body>
+
+</html>
