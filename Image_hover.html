@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay</title>
+
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+        }
+
+        .img{
+            display: block;
+            width: 300px;
+            transition: 1s;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-color: rgba(0,0,0,0.7);
+        }  
+        
+        /* When hover then call overlay properties */
+        .container:hover .overlay{
+            opacity: 1;
+        }
+
+        .container:hover .img{
+            transform: rotate(360deg);
+        }
+
+        .text{
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            
+            /* Home-Work */
+            
+            /* width: 150px;
+            height: 50px;
+            background-color: red; */
+
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Image Overlay</h2>
+
+    <div class="container">
+        <img src="photo-1526512340740-9217d0159da9.jpg" alt="Vertical Image" class="img">
+
+        <div class="overlay">
+            <div class="text">
+                <p>Image Overlay</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
